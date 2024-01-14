@@ -1,40 +1,56 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-body{
-    height: 100%;
-    width: 100%;
-    background-color: lightseagreen;
-    display: flex;
-    justify-content: center;
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: lightseagreen;
 }
 
-#container{
-    height: 400px;
-    width: 267px;
-    border-radius: 10px;
-    background-color: white;
-    position: relative;
-    /* overflow: hidden; */
+.conDiv{
+	display: flex;
+	justify-content: center;
+	/* flex-flow: column; */
 }
 
-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+#container {
+	height: 500px;
+	width: 333.8px;
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	position: relative;
+	overflow: hidden;
 }
 
-#container i{
-    color: #fff;
-    font-size: 75px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
-    transition: transform ease 0.5s;
+p{
+	text-align: center;
+	margin: 20px;
+	font-size: 30px;
+	color: black;
+	/* position: absolute; */
+	/* position: relative; */
+	/* left: 50%; */
+	/* transform: translateX(-50%); */
+}
+
+#container img{
+	border-radius: 15px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+#container i {
+	color: aliceblue;
+	font-size: 85px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%) scale(0);
+	transition: transform ease 0.5s;
+	opacity: 0;
 }
